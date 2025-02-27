@@ -132,6 +132,12 @@
                     <button id="btn-piso-1" class="nivel-boton activo" title="Primer Piso" onclick="changeFloor(1)">1</button>
                     <button id="btn-piso-2" class="nivel-boton" title="Segundo Piso" onclick="changeFloor(2)">2</button>
                 </div>
+                                <div class="whatsapp-btn" style="display: flex; justify-content: center; align-items: center;">
+                    <button id="whatsapp-button">
+                      WhatsApp <i class="bx bxl-whatsapp bx-tada" style="font-size: 20px;"></i>
+                    </button>
+
+                  </div>  
             </div>
             <div class="side-panel2">
                 <div class="logo-container2">
@@ -143,9 +149,8 @@
                 </div>
                 <div class="buttons-container2">
                     <button class="btn1" onclick="openInNewTab('https://www.rappi.com.co/restaurantes/900090727-la-gran-fragatta')">Menú La Gran Fragatta</button>
-                    <button class="btn2" onclick="openInNewTab('https://wa.link/td2pia')">WhatsApp</button>
+                    <button class="btn2" onclick="openInNewTab('https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIGCAMQRRg7MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg9MgYIBxAuGEDSAQgxNDQ2ajBqOagCALACAQ&um=1&ie=UTF-8&fb=1&gl=co&sa=X&geocode=KceeVLyPpjCOMbvkaEOzaRAk&daddr=Cra.+23c+%238-27,+La+Alameda,+Cali,+Valle+del+Cauca')">Como Llegar</button>
                     <button class="btn3" onclick="openInNewTab('https://www.instagram.com/lagranfragattacali/?hl=es')">Instagram</button>
-                    <button class="btn4" onclick="openInNewTab('https://www.facebook.com/people/La-Gran-Fragatta/61554989460737/?_rdr')">Facebook</button>
                 </div>
             </div>
         </div>
@@ -194,6 +199,16 @@
     function openInNewTab(url) {
         window.open(url, '_blank').focus();
     }
+</script>
+<script>
+    const whatsappButton = document.getElementById('whatsapp-button');
+
+whatsappButton.addEventListener('click', function(e) {
+  e.preventDefault(); // Evita el comportamiento por defecto
+
+  // Redirige a la URL de WhatsApp sin enviar información a gtag
+  window.location.href = 'https://wa.link/kkz4ha';
+});
 </script>
     <script type="importmap">
         {
